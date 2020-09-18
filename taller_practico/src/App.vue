@@ -17,6 +17,9 @@
             <li role="presentation">
               <router-link to="/contacto" active-class="menuActivo" title="Contacto">Contacto</router-link>
             </li>
+            <li role="presentation">
+              <router-link to="/login" active-class="menuActivo" title="Login">Login</router-link>
+            </li>
           </ul>
         </nav>
         <h3 class="text-muted"><img src="./assets/images/logo.jpg" alt="Logo" style="width:70px;" /></h3>

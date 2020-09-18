@@ -1,6 +1,6 @@
 <template>
   <div>
-    
+    <vue-headful :title="title" />
     <h1>Página de Inicio</h1>
     <h3>Nombre: {{ nombre | convierte_a_mayusculas }}</h3>
     <p>
@@ -13,13 +13,18 @@
 </template>
 
 <script>
+import vueHeadful from 'vue-headful';
 export default {
   name: 'HomeComponent',
+  components:{
+    vueHeadful
+  },
   data(){
     return{
       nombre:'César Cancino',
       edad:40,
-      contador:0
+      contador:0,
+      title:"mi título ñandú"
     }
   },
   methods:{
